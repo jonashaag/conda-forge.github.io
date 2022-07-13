@@ -118,6 +118,9 @@
                           {{ fs }}-feedstock
                         </a>
 {% endfor %}
+{% if data.info %}
+                        <div>{{ data.info.summary }}</div>
+{% endif %}
                     </li>
 {% endfor %}
                 </ul>
